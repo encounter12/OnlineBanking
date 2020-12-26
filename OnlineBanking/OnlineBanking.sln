@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBanking.ConsoleUI", "OnlineBanking.ConsoleUI\OnlineBanking.ConsoleUI.csproj", "{850ACA08-DA79-4756-B46F-E0878C5EDB8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBanking.Application", "OnlineBanking.Application\OnlineBanking.Application.csproj", "{51B1E88D-9564-482C-AE1E-973509FE35C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBanking.Infrastructure", "OnlineBanking.Infrastructure\OnlineBanking.Infrastructure.csproj", "{0123CD74-1ECA-48D5-AB6B-2AB3D339ECD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBanking.Domain", "OnlineBanking.Domain\OnlineBanking.Domain.csproj", "{ABDA879C-2A49-46B7-93B7-03982E00E7DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{850ACA08-DA79-4756-B46F-E0878C5EDB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850ACA08-DA79-4756-B46F-E0878C5EDB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850ACA08-DA79-4756-B46F-E0878C5EDB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850ACA08-DA79-4756-B46F-E0878C5EDB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B1E88D-9564-482C-AE1E-973509FE35C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B1E88D-9564-482C-AE1E-973509FE35C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B1E88D-9564-482C-AE1E-973509FE35C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B1E88D-9564-482C-AE1E-973509FE35C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0123CD74-1ECA-48D5-AB6B-2AB3D339ECD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0123CD74-1ECA-48D5-AB6B-2AB3D339ECD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0123CD74-1ECA-48D5-AB6B-2AB3D339ECD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0123CD74-1ECA-48D5-AB6B-2AB3D339ECD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDA879C-2A49-46B7-93B7-03982E00E7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDA879C-2A49-46B7-93B7-03982E00E7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDA879C-2A49-46B7-93B7-03982E00E7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDA879C-2A49-46B7-93B7-03982E00E7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
