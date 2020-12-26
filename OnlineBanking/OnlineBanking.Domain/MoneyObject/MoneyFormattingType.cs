@@ -1,5 +1,5 @@
 // ReSharper disable UnusedMember.Global
-namespace OnlineBanking.Domain
+namespace OnlineBanking.Domain.MoneyObject
 {
     public enum MoneyFormattingType
     {

@@ -1,9 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
 
-using OnlineBanking.Domain.Enums;
-
-namespace OnlineBanking.Domain
+namespace OnlineBanking.Domain.MoneyObject
 {
     public class MoneyCollection : Collection<Money>
     {

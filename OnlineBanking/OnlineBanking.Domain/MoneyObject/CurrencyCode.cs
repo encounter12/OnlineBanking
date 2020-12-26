@@ -1,6 +1,6 @@
 // ReSharper disable InconsistentNaming
 // ReSharper disable UnusedMember.Global
-namespace OnlineBanking.Domain.Enums
+namespace OnlineBanking.Domain.MoneyObject
 {
     public enum CurrencyCode
     {

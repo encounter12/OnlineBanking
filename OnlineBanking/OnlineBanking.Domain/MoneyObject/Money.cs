@@ -1,9 +1,7 @@
 using System;
 using System.Text;
 
-using OnlineBanking.Domain.Enums;
-
-namespace OnlineBanking.Domain
+namespace OnlineBanking.Domain.MoneyObject
 {
     public readonly struct Money : IEquatable<Money>, IComparable<Money>, IComparable
     {
