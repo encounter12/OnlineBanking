@@ -1,7 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
 
-namespace OnlineBanking.Domain.MoneyObject
+namespace OnlineBanking.Domain.ValueObjects.MoneyObject
 {
     public class MoneyCollection : Collection<Money>
     {

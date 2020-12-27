@@ -1,4 +1,4 @@
-﻿using System;
+﻿using OnlineBanking.Application.Services;
 
 namespace OnlineBanking.ConsoleUI
 {
@@ -6,7 +6,8 @@ namespace OnlineBanking.ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var fundsTransferAppService = new FundsTransferAppService();
+            fundsTransferAppService.TransferFunds(1, 2, 50M);
         }
     }
 }
