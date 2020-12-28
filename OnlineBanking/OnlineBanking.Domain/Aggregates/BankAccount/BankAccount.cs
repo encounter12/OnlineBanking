@@ -34,7 +34,7 @@ namespace OnlineBanking.Domain.Aggregates
 
         public Notification Withdraw(Money money)
         {
-            Notification notification = ValidateWithdrawal(money);
+            Notification notification = ExecuteWithdrawalRules(money);
     
             if (notification.HasErrors)
             {
@@ -46,14 +46,15 @@ namespace OnlineBanking.Domain.Aggregates
             return notification;
         }
 
-        private Notification ValidateWithdrawal(Money money)
+        private Notification ExecuteWithdrawalRules(Money money)
         {
             var note = new Notification();
-            ValidateMoneyAvailability(note, money);
+            EnsureMoneyAvailability(note, money);
             return note;
         }
 
-        private void ValidateMoneyAvailability(Notification note, Money money)
+        // Business rule:
+        private void EnsureMoneyAvailability(Notification note, Money money)
         {
             if (AccountType != AccountType.CreditAccount && Balance < money)
             {
