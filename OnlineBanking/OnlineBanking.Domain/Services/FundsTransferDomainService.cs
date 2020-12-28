@@ -27,7 +27,7 @@ namespace OnlineBanking.Domain.Services
 
             var money = new Money(amount, sourceBankAccount.Currency);
             
-            Notification note = sourceBankAccount?.Withdraw(money);
+            Notification note = sourceBankAccount.Withdraw(money);
 
             if (note.HasErrors)
             {

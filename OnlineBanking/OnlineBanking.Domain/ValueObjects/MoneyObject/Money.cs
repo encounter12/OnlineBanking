@@ -61,7 +61,7 @@ namespace OnlineBanking.Domain.ValueObjects.MoneyObject
         public bool Equals(Money other)
             => Currency == other.Currency && MoneyValue == other.MoneyValue;
 
-        public override bool Equals(object other)
+        public override bool Equals(object? other)
         {
             var otherMoney = other as Money?;
             return otherMoney.HasValue && Equals(otherMoney.Value);
@@ -80,7 +80,7 @@ namespace OnlineBanking.Domain.ValueObjects.MoneyObject
             return Equals(other) ? 0 : MoneyValue.CompareTo(other.MoneyValue);
         }
 
-        public int CompareTo(object other)
+        public int CompareTo(object? other)
         {
             if (!(other is Money))
             {

@@ -12,8 +12,8 @@ namespace OnlineBanking.Infrastructure
     {
         private readonly List<Error> _errors = new();
 
-        public void AddError(string message, Exception e)
-            => _errors.Add(new Error(message, e));
+        public void AddError(string message, Exception? e)
+            => _errors.Add(new Error(message, e!));
 
         public void AddError(string message) => AddError(message, null);
 
