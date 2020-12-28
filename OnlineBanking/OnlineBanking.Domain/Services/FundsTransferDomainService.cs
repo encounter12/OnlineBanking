@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OnlineBanking.Domain.Aggregates;
@@ -21,8 +22,8 @@ namespace OnlineBanking.Domain.Services
             int destinationBankAccountId,
             decimal amount)
         {
-            var sourceBankAccount = _bankAccounts.FirstOrDefault(ba => ba.Id == sourceBankAccountId);
-            var destBankAccount = _bankAccounts.FirstOrDefault(ba => ba.Id == destinationBankAccountId);
+            BankAccount sourceBankAccount = _bankAccounts.Single(ba => ba.Id == sourceBankAccountId);
+            BankAccount destBankAccount = _bankAccounts.Single(ba => ba.Id == destinationBankAccountId);
 
             var money = new Money(amount, sourceBankAccount.Currency);
             
